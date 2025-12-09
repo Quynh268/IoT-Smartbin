@@ -1,0 +1,7 @@
+{
+  "name": "EcoBin - Thùng Rác Thông Minh",
+  "description": "Ứng dụng quản lý thùng rác IoT thông minh với giám sát thời gian thực, cảnh báo tự động và trợ lý ảo AI hỗ trợ phân loại rác.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

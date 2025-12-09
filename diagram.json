@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "author": "Trần Thị Diễm Quỳnh",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 28.8, "left": -148.76, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "ultrasonic1", "top": 1.5, "left": -23.3, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo1", "top": 142, "left": 67.2, "attrs": {} },
+    { "type": "wokwi-pir-motion-sensor", "id": "pir1", "top": -5.6, "left": 175.02, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "ultrasonic1:VCC", "esp:5V", "red", [ "v0" ] ],
+    [ "ultrasonic1:GND", "esp:GND.2", "black", [ "v0" ] ],
+    [ "ultrasonic1:TRIG", "esp:5", "green", [ "v0" ] ],
+    [ "ultrasonic1:ECHO", "esp:18", "green", [ "v0" ] ],
+    [ "servo1:PWM", "esp:13", "green", [ "v0" ] ],
+    [ "servo1:VCC", "esp:5V", "red", [ "v0" ] ],
+    [ "servo1:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "pir1:VCC", "esp:5V", "red", [ "v0" ] ],
+    [ "pir1:GND", "esp:GND.3", "black", [ "v0" ] ],
+    [ "pir1:OUT", "esp:23", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}

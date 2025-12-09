@@ -1,0 +1,8 @@
+# Wokwi Library List
+# See https://docs.wokwi.com/guides/libraries
+
+NewPing
+PubSubClient
+ESP32Servo
+WiFi
+ArduinoJson
